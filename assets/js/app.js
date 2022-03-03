@@ -105,6 +105,4 @@ contactBtn.addEventListener('click', function() {
     var height = elementOffsetTop - navHeight;
 
     window.scrollTo(0, height);
-
-    console.log(elementOffsetTop);
 })
