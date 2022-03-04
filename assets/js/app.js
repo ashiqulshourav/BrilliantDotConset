@@ -120,7 +120,7 @@ navIcon.addEventListener('click', function() {
         navIcon.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
         navIcon.style.boxShadow = "rgba(99, 99, 99, 0.3) 0px 2px 8px 0px";
         navBar.classList.add('open');
-        navBar.style.display = "block";
+        navBar.style.display = "flex";
         document.body.setAttribute('style', 'overflow:hidden');
 
         navBar.appendChild(navPhone);
