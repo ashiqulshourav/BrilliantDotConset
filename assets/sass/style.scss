@@ -136,6 +136,29 @@
             font-size: 2.5rem;
         }
     }
+    .navbar-toggler {
+        display: none;
+        .icon {
+            border: none;
+            outline: none;
+            background-color: $primary-color;
+            border-radius: 0;
+            padding: .5rem;
+            width: 5rem;
+            height: 5rem;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            i {
+                color: $white-color;
+            }
+            &:hover {
+                background-color: $primary-color;
+                i {
+                    color: $white-color;
+                }
+            }
+        }
+    }
 }
 
 .fixed-top {
@@ -370,6 +393,7 @@
             position: relative;
             width: 70%;
             padding-left: 20rem;
+            margin: auto;
             .owl-nav {
                 position: absolute;
                 top: 0;
@@ -445,7 +469,7 @@
         padding: 0 5rem;
         .member-item {
             transition: 0.3s all ease;
-            margin-bottom: 4rem;
+            margin: 0 1rem 4rem 1rem;
             &:hover .img-box::after {
                 content: '';
                 position: absolute;

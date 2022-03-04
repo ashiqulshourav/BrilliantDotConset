@@ -97,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function() {
 // How to go to dedicated part in a website with smooth scrolling
 const contactBtn = document.querySelector('#contactNow');
 const reqACall = document.querySelector('#reqACall');
-const navBar = document.querySelector('#navBar');
 
 contactBtn.addEventListener('click', function() {
     var elementOffsetTop = reqACall.offsetTop;
@@ -106,3 +105,35 @@ contactBtn.addEventListener('click', function() {
 
     window.scrollTo(0, height);
 })
+
+// Responsive Navbar
+const navMain = document.querySelector('.navbar-main');
+const navIcon = document.querySelector('.navbar-toggler .icon');
+const navBar = document.querySelector('.navbar-nav');
+const sections = document.querySelectorAll('section');
+const navPhone = navMain.querySelector('.phone');
+const topBarAddress = document.querySelector('.top-bar-address');
+const topBarSocialIcon = document.querySelector('.top-bar-social-icon');
+
+navIcon.addEventListener('click', function() {
+    if (!navBar.classList.contains('open')) {
+        navIcon.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+        navIcon.style.boxShadow = "rgba(99, 99, 99, 0.3) 0px 2px 8px 0px";
+        navBar.classList.add('open');
+        navBar.style.display = "block";
+        document.body.setAttribute('style', 'overflow:hidden');
+
+        navBar.appendChild(navPhone);
+        navBar.appendChild(topBarAddress);
+        navBar.appendChild(topBarSocialIcon);
+    } else {
+        navIcon.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        navIcon.style.boxShadow = "";
+        navBar.classList.remove('open');
+        navBar.style.display = "none";
+        document.body.removeAttribute('style', 'overflow:hidden');
+
+
+        navBar.removeChild(navPhone);
+    }
+});
