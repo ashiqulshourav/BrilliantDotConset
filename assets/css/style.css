@@ -679,6 +679,8 @@ h5 {
   border: none;
   outline: none;
   margin: 5rem 0;
+  display: block;
+  width: 100%;
 }
 
 .service .service-items .service-item {
@@ -1287,6 +1289,7 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
     visibility: hidden;
   }
   .navbar-nav {
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1307,7 +1310,6 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
     padding-top: 1rem;
     -webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
-    opacity: 0;
   }
   .navbar-nav .nav-item {
     margin-left: 2rem;
@@ -1338,7 +1340,9 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
     font-weight: normal;
   }
   .navbar-nav.open {
-    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
   }
@@ -1369,6 +1373,74 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
   }
   .fixed-top .nav-link {
     padding: 1.5rem 2rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.4rem;
+  }
+  .facts .facts-inner {
+    padding: 5rem;
+  }
+  .facts .facts-inner .facts-item .icon {
+    left: -3.5rem;
+    top: .5rem;
+  }
+  .facts .facts-inner .facts-item .icon i {
+    font-size: 2.5rem;
+  }
+  .facts .facts-inner .facts-item .counter {
+    font-size: 3rem;
+  }
+  .facts .facts-inner .facts-item {
+    padding: .5rem;
+  }
+  .about .about-inner .about-img .grow-up {
+    width: 25rem;
+    height: 35rem;
+  }
+  .about .about-inner .about-img::after {
+    bottom: 0;
+    right: 5%;
+  }
+  .service hr {
+    display: none;
+  }
+  .service .service-items .service-item {
+    width: 49%;
+    margin-bottom: 2rem;
+  }
+  .service .service-items .service-item .icon-solid i {
+    font-size: 3rem;
+  }
+  .owl-carousel .owl-nav button {
+    width: 4rem;
+    height: 4rem;
+  }
+  .portfolio .portfolio-content h5 {
+    font-size: 2rem;
+  }
+  .portfolio .portfolio-content .p-title {
+    font-size: 1.2rem;
+  }
+  .team-member .sub-title {
+    width: 40%;
+  }
+  .team-member .member-items {
+    padding: 0 3rem;
+  }
+  .testimonial .testimonial-items .clients-item .clients-img {
+    width: 20rem;
+  }
+  .testimonial .testimonial-items .clients-item .clients-content blockquote {
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
