@@ -109,8 +109,10 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .mr-5 {
@@ -809,7 +811,7 @@ h5 {
 .team-member .member-items .member-item {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
-  margin: 0 1rem 4rem 1rem;
+  margin: 2rem auto;
 }
 
 .team-member .member-items .member-item:hover .img-box::after {
@@ -1065,13 +1067,18 @@ h5 {
 }
 
 footer hr {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 footer .footer-items {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+footer .footer-items .footer-item {
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
 
 footer .footer-items .footer-item .f-item-title {
@@ -1088,7 +1095,7 @@ footer .footer-items .footer-item .post-title {
 }
 
 footer .footer-items .footer-item .f-item-content {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: block;
 }
 
@@ -1246,13 +1253,10 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
-    margin-top: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 5rem;
   }
   .testimonial .testimonial-items .clients .clients-sm-img:not(:first-child) {
     margin: 1rem;
@@ -1286,7 +1290,7 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
     display: block;
   }
   .navbar-main .phone {
-    visibility: hidden;
+    display: none;
   }
   .navbar-nav {
     display: none;
@@ -1318,7 +1322,7 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
     margin-left: 1rem;
   }
   .navbar-nav .phone {
-    visibility: visible;
+    display: block;
     margin-top: 3rem;
   }
   .navbar-nav .icon {
@@ -1387,20 +1391,26 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
     font-size: 2.4rem;
   }
   .facts .facts-inner {
-    padding: 5rem;
+    padding: 0 5rem;
   }
   .facts .facts-inner .facts-item .icon {
-    left: -3.5rem;
-    top: .5rem;
+    left: -1.5rem;
+    top: 2rem;
   }
   .facts .facts-inner .facts-item .icon i {
     font-size: 2.5rem;
   }
   .facts .facts-inner .facts-item .counter {
     font-size: 3rem;
+    padding-left: 3rem;
+  }
+  .facts .facts-inner .facts-item .text {
+    padding-left: 3rem;
   }
   .facts .facts-inner .facts-item {
-    padding: .5rem;
+    padding: 1.5rem 0;
+    width: 48%;
+    border-right: none;
   }
   .about .about-inner .about-img .grow-up {
     width: 25rem;
@@ -1437,10 +1447,239 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
     padding: 0 3rem;
   }
   .testimonial .testimonial-items .clients-item .clients-img {
-    width: 20rem;
+    width: 23rem;
   }
   .testimonial .testimonial-items .clients-item .clients-content blockquote {
     font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  .sub-title {
+    width: 70%;
+  }
+  .team-member .sub-title {
+    width: 70%;
+  }
+  .navbar-main .navbar-brand i {
+    font-size: 3rem;
+  }
+  .navbar-main .navbar-toggler .icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .about .about-inner .about-img {
+    width: 90%;
+  }
+  .about .about-inner .about-content {
+    width: 98%;
+  }
+  .about .about-inner .about-img {
+    margin: 0 auto 3rem auto;
+  }
+  .about .about-inner .about-img .circle,
+  .about .about-inner .about-img .triangle,
+  .about .about-inner .about-img .triangle::before {
+    width: 20rem;
+    height: 20rem;
+  }
+  .about .about-inner .about-img .triangle::before {
+    width: 18rem;
+    height: 18rem;
+  }
+  .about .about-inner .about-img .grow-up {
+    width: 30rem;
+    height: 40rem;
+  }
+  .partners .partners-inner h2 br {
+    display: none;
+  }
+  .req-a-call-inner > div {
+    width: 98%;
+  }
+  .req-a-call-inner > div:first-child {
+    margin-bottom: 2rem;
+  }
+  .req-a-call-inner input {
+    font-weight: bold;
+  }
+  .testimonial .testimonial-items .clients-item {
+    width: 100%;
+  }
+  .testimonial .testimonial-items .clients-item .clients-img {
+    width: 70%;
+    margin: 0 auto 7rem auto;
+  }
+  .testimonial .testimonial-items .clients-item .clients-content {
+    width: 100%;
+  }
+  .testimonial .testimonial-items .clients {
+    margin-bottom: 2rem;
+  }
+  .cta-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cta-inner h3 {
+    margin-bottom: 5rem;
+  }
+  footer {
+    padding: 8rem 0;
+  }
+  footer .footer-items .footer-item {
+    margin: 2rem 0;
+  }
+  footer .footer-items .footer-item br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  section,
+  footer {
+    padding: 5rem 0;
+  }
+  .sub-title {
+    width: 85%;
+    margin-bottom: 5rem;
+  }
+  .team-member .sub-title {
+    width: 85%;
+    margin-bottom: 5rem;
+  }
+  .hero-section {
+    min-height: 60rem;
+  }
+  .hero-section h1::before {
+    font-size: 1.5rem;
+  }
+  .navbar-main .navbar-brand,
+  .navbar-main .navbar-brand i {
+    font-size: 2.5rem;
+  }
+  .navbar-main .navbar-toggler .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .navbar-main .navbar-toggler .icon i {
+    font-size: 2.3rem;
+  }
+  .facts .facts-inner {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .facts .facts-inner .facts-item {
+    width: 98%;
+  }
+  .facts .facts-inner .facts-item .counter,
+  .facts .facts-inner .facts-item .text {
+    padding-left: 5rem;
+  }
+  .facts .facts-inner .facts-item .icon {
+    left: 0;
+  }
+  .about .about-inner .about-img {
+    width: 100%;
+  }
+  .about .about-inner .about-img .circle,
+  .about .about-inner .about-img .triangle {
+    width: 15rem;
+    height: 15rem;
+  }
+  .about .about-inner .about-img .triangle::before {
+    width: 13rem;
+    height: 13rem;
+  }
+  .about .about-inner .about-img .grow-up {
+    width: 20rem;
+    height: 30rem;
+  }
+  .about .about-inner .about-img .circle {
+    margin-bottom: 10rem;
+  }
+  .service .service-items .service-item {
+    width: 100%;
+    padding: 3rem;
+  }
+  .service .service-items .service-item .icon-solid i {
+    font-size: 2.5rem;
+  }
+  .icon-sqr {
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+  }
+  .icon-sqr i {
+    font-size: 1.3rem;
+  }
+  .service .icons {
+    margin-bottom: 2rem;
+  }
+  .service .service-items .service-item h4 {
+    margin-bottom: 1rem;
+  }
+  .service::before,
+  .portfolio::before {
+    width: 8rem;
+    height: 8rem;
+  }
+  .service::after,
+  .portfolio::after {
+    width: 10rem;
+    height: 10rem;
+  }
+  .partners .partners-inner .partners-carousel {
+    width: 100%;
+    padding-left: 15rem;
+  }
+  .req-a-call-inner .req-form .w-50 {
+    width: 98%;
+  }
+  footer .footer-items .footer-item .f-item-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  footer .footer-items .footer-item h5 {
+    font-size: 1.8rem;
+  }
+  footer .footer-items address,
+  footer .footer-items .f-item-content a,
+  footer .footer-items .service-item a {
+    font-size: 1.4rem;
+  }
+  footer .footer-items .footer-item .post-title {
+    font-size: 1.6rem;
+  }
+  .copyright .copyright-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .copyright .copyright-inner .copyright-text {
+    margin-bottom: 1rem;
+  }
+  .back-to-top .icon {
+    width: 4rem;
+    height: 4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

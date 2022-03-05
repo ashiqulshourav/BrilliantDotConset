@@ -471,7 +471,7 @@
         padding: 0 5rem;
         .member-item {
             transition: 0.3s all ease;
-            margin: 0 1rem 4rem 1rem;
+            margin: 2rem auto;
             &:hover .img-box::after {
                 content: '';
                 position: absolute;
@@ -686,11 +686,13 @@
 // Footer section css
 footer {
     hr {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     .footer-items {
         align-items: flex-start;
         .footer-item {
+            margin: 2rem auto;
+            padding: 0 2rem;
             .f-item-title {
                 color: $white-color;
                 margin-bottom: 3rem;
@@ -703,7 +705,7 @@ footer {
                 margin-bottom: 1rem;
             }
             .f-item-content {
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
                 display: block;
                 span {
                     display: block;
