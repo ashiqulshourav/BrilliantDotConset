@@ -137,3 +137,27 @@ navIcon.addEventListener('click', function() {
         navBar.removeChild(navPhone);
     }
 });
+
+
+// Vission Mission 
+var vTab = document.querySelectorAll('.vission-mission-items .tabVission');
+
+function activeVission(i) {
+    vTab.forEach((client) => {
+        client.style.display = "none";
+    });
+    vTab[i].style.display = "block";
+}
+activeVission(1)
+var vissionTabItems = document.querySelectorAll('.vission-mission-tab-item');
+vissionTabItems.forEach((item) => {
+    item.addEventListener('click', e => {
+        // document.querySelector('.vission-mission-tab-items .vission-mission-tab-item.active').classList.remove('active');
+        if (document.querySelector('.vission-mission-tab-item.active') === null) {
+            // return;
+        } else {
+            document.querySelector('.vission-mission-tab-item.active').classList.remove('active');
+        }
+        item.classList.add('active')
+    });
+})

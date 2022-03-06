@@ -1197,6 +1197,221 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
   color: #FE6600;
 }
 
+.hero-section ul li {
+  display: inline-block;
+  margin-right: 3rem;
+  position: relative;
+}
+
+.hero-section ul li::before {
+  content: ':';
+  position: absolute;
+  top: -1rem;
+  left: -2rem;
+  color: #FE6600;
+  font-size: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: -.2rem;
+}
+
+.hero-section ul li a {
+  font-size: 2rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.hero-section ul li:first-child::before {
+  display: none;
+}
+
+.about-hero-section {
+  background: url("../img/banner-bg.jpg") no-repeat;
+  min-height: 45rem;
+  background-position: 70% 35%;
+}
+
+.about-hero-section h1 {
+  margin-bottom: 1rem;
+}
+
+.vission-mission h2 {
+  line-height: 1.2;
+}
+
+.vission-mission .vission-mission-inner > div {
+  width: 50%;
+}
+
+.vission-mission .vission-mission-inner .vission-mission-tab-items {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.vission-mission .vission-mission-inner .vission-mission-tab-item {
+  width: 100%;
+  background: url(../img/vission-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: 40%;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.vission-mission .vission-mission-inner .vission-mission-tab-item h3 {
+  font-size: 3rem;
+  margin: 5rem 0;
+  color: #FFFFFF;
+  text-align: right;
+  padding-right: 5rem;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.vission-mission .vission-mission-inner .vission-mission-tab-item span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.vission-mission .vission-mission-inner .vission-mission-tab-item span i {
+  font-size: 3rem;
+  color: #FFFFFF;
+}
+
+.vission-mission .vission-mission-inner .vission-mission-tab-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 40, 40, 0.9);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.vission-mission .vission-mission-inner .vission-mission-tab-item:hover::after {
+  background: rgba(254, 102, 0, 0.9);
+}
+
+.vission-mission .vission-mission-inner .vission-mission-tab-item:hover h3 {
+  padding-right: 10rem;
+}
+
+.vission-mission .vission-mission-inner .vission-mission-tab-item:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.vission-mission .vission-mission-inner .vission-mission-items {
+  padding-left: 5rem;
+}
+
+.vission-mission .vission-mission-inner .vission-mission-items .vission-mission-item p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: #282828;
+}
+
+.vission-mission .vission-mission-inner .active::after {
+  background: rgba(254, 102, 0, 0.9);
+}
+
+.vission-mission .vission-mission-inner .active h3 {
+  padding-right: 10rem;
+}
+
+.vission-mission .vission-mission-inner .active span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.vission-mission .success-item {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: #FFF1E7;
+  padding: 1rem 3rem 1rem 1rem;
+  border-left: 1rem solid #FE6600;
+}
+
+.vission-mission .success-item .icon {
+  background-color: transparent;
+  width: 6rem;
+  height: 6rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 2rem;
+}
+
+.vission-mission .success-item .icon i {
+  font-size: 4rem;
+}
+
+.vission-mission .success-item .success-content .counter {
+  color: #FE6600;
+}
+
+.vission-mission .success-item .success-content .counter span {
+  color: #282828;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.vission-mission .success-item .success-content .text {
+  font-weight: bold;
+}
+
+.service-details p {
+  color: #3B3B3B;
+  margin-bottom: 3rem;
+}
+
+.service-details h3 {
+  font-size: 3.5rem;
+}
+
+.service-details .service-content {
+  width: 70%;
+}
+
+.service-details .service-content .service-img {
+  margin-bottom: 2rem;
+}
+
+.service-details .services {
+  width: 24%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 @media only screen and (max-width: 1400px) {
   .container {
     max-width: 111rem;
@@ -1264,6 +1479,9 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
 }
 
 @media only screen and (max-width: 992px) {
+  .about-hero-section {
+    min-height: 37.5rem;
+  }
   .top-bar {
     display: none;
   }
@@ -1336,6 +1554,7 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
   }
   .navbar-nav .icon i {
     font-size: 1.5rem;
+    color: #FE6600;
   }
   .navbar-nav .email a,
   .navbar-nav .phone a,
@@ -1452,6 +1671,29 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
   .testimonial .testimonial-items .clients-item .clients-content blockquote {
     font-size: 1.8rem;
   }
+  .vission-mission-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .vission-mission .vission-mission-inner > div {
+    width: 90%;
+  }
+  .vission-mission .vission-mission-inner .vission-mission-tab-items {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 3rem;
+  }
+  .vission-mission .vission-mission-inner .vission-mission-tab-item h3 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: left;
+  }
+  .vission-mission .vission-mission-inner .vission-mission-items {
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1466,6 +1708,9 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
   }
   .team-member .sub-title {
     width: 70%;
+  }
+  .about-hero-section {
+    min-height: 30rem;
   }
   .navbar-main .navbar-brand i {
     font-size: 3rem;
@@ -1567,6 +1812,9 @@ footer .footer-items .newsletter button[type="submit"]:hover i {
   }
   .hero-section {
     min-height: 60rem;
+  }
+  .about-hero-section {
+    min-height: 40rem;
   }
   .hero-section h1::before {
     font-size: 1.5rem;

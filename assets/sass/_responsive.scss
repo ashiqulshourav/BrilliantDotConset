@@ -67,6 +67,9 @@
 
 // Medium device(Tablets, less than 992px}
 @media only screen and (max-width: 992px) {
+    .about-hero-section {
+        min-height: 37.5rem;
+    }
     .top-bar {
         display: none;
     }
@@ -127,6 +130,7 @@
             margin-right: 0;
             i {
                 font-size: 1.5rem;
+                color: $primary-color;
             }
         }
         .email a,
@@ -240,6 +244,24 @@
     .testimonial .testimonial-items .clients-item .clients-content blockquote {
         font-size: 1.8rem;
     }
+    .vission-mission-inner {
+        flex-direction: column;
+    }
+    .vission-mission .vission-mission-inner>div {
+        width: 90%;
+    }
+    .vission-mission .vission-mission-inner .vission-mission-tab-items {
+        align-self: center;
+        margin-bottom: 3rem;
+    }
+    .vission-mission .vission-mission-inner .vission-mission-tab-item h3 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        text-align: left;
+    }
+    .vission-mission .vission-mission-inner .vission-mission-items {
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -254,6 +276,9 @@
     }
     .team-member .sub-title {
         width: 70%;
+    }
+    .about-hero-section {
+        min-height: 30rem;
     }
     .navbar-main .navbar-brand i {
         font-size: 3rem;
@@ -354,6 +379,9 @@
     }
     .hero-section {
         min-height: 60rem;
+    }
+    .about-hero-section {
+        min-height: 40rem;
     }
     .hero-section h1::before {
         font-size: 1.5rem;

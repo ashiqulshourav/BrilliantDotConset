@@ -60,11 +60,11 @@
                 <a href="index.html" class="navbar-brand"> <i class="fas fa-edit"></i> <strong>Conset</strong><span class="text-primary">.</span></a>
                 <ul class="navbar-nav flex">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="About.html" class="nav-link active">About</a></li>
-                    <li class="nav-item"><a href="Services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="Portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="Pages.html" class="nav-link">Pages</a></li>
-                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="pages.html" class="nav-link">Pages</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="phone">
                     <span class="icon mr-2"><i class="fas fa-headphones-alt"></i></span> <strong> <a href="tel: +66 888 6666">+66 888 666</a></strong>
@@ -80,14 +80,14 @@
     <!-- Nav bar End -->
 
     <!-- Hero Section Start -->
-    <section class="full-width hero-section bg-secondary">
+    <section class="full-width hero-section about-hero-section bg-secondary">
         <div class="container">
             <div class="hero-section-inner">
                 <h1 class="title">About Us.</h2>
-                <ul class="flex">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
+                    <ul class="">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
             </div>
         </div>
     </section>
@@ -97,31 +97,32 @@
     <section class="full-width vission-mission">
         <div class="container">
             <div class="vission-mission-inner flex">
-                <div class="vission-mission-tab-items">
-                    <div class="vission-mission-tab-item">
-                        <h3>Our Vission </h3> 
+                <div class="vission-mission-tab-items flex">
+                    <div class="vission-mission-tab-item" onclick="activeVission(0)">
+                        <h3>Our Vission </h3>
                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
                     </div>
-                    <div class="vission-mission-tab-item">
-                        <h3>Our Mission </h3> 
+                    <div class="vission-mission-tab-item" onclick="activeVission(1)">
+                        <h3>Our Mission </h3>
                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
                     </div>
-                    <div class="vission-mission-tab-item">
-                        <h3>Our Vission </h3> 
+                    <div class="vission-mission-tab-item" onclick="activeVission(2)">
+                        <h3>Our Vission </h3>
                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
                     </div>
                 </div>
                 <div class="vission-mission-items">
-                    <div class="vission-mission-item tab">
+                    <div class="vission-mission-item tabVission">
                         <h2 class="title">Can Solve Your Financial Problem & Grow <span class="text-primary">Business.</span></h2>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco aboris nisi ut aliquip ex ea commodo consequat in voluptate velit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco aboris nisi ut aliquip ex ea commodo consequat
+                            in voluptate velit.</p>
 
-                        <div class="success-item">
+                        <div class="success-item flex">
                             <div class="success-icon icon">
-                                    <i class="fas fa-clipboard-check"></i>
+                                <i class="fas fa-clipboard-check"></i>
                             </div>
                             <div class="success-content">
                                 <div class="counter">
@@ -131,14 +132,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="vission-mission-item tab">
+                    <div class="vission-mission-item tabVission">
                         <h2 class="title">Can Solve Your Financial Problem & Grow <span class="text-primary">Business.</span></h2>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco aboris nisi ut aliquip ex ea commodo consequat in voluptate velit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco aboris nisi ut aliquip ex ea commodo consequat
+                            in voluptate velit.</p>
 
-                        <div class="success-item">
+                        <div class="success-item flex">
                             <div class="success-icon icon"><i class="fas fa-users"></i>
                             </div>
                             <div class="success-content">
@@ -149,14 +151,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="vission-mission-item tab">
+                    <div class="vission-mission-item tabVission">
                         <h2 class="title">Can Solve Your Financial Problem & Grow <span class="text-primary">Business.</span></h2>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco aboris nisi ut aliquip ex ea commodo consequat in voluptate velit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco aboris nisi ut aliquip ex ea commodo consequat
+                            in voluptate velit.</p>
 
-                        <div class="success-item">
+                        <div class="success-item flex">
                             <div class="success-icon icon">
                                 <i class="fas fa-award"></i>
                             </div>
@@ -295,7 +298,7 @@
         </div>
     </section>
     <!-- CTA section End -->
-    
+
     <!-- Testimonial Section Start -->
     <section class="full-width testimonial">
         <div class="container">
@@ -456,8 +459,8 @@
     <!-- Copyright section Start -->
     <div class="full-width copyright">
         <div class="container">
-            <div class="copygright-inner flex">
-                <div class="coyright-text">
+            <div class="copyright-inner flex">
+                <div class="copyright-text">
                     <p>Copyright &copy; <span class="text-primary">2022</span> | All Rights Reserved.</p>
                 </div>
                 <ul class="link flex">

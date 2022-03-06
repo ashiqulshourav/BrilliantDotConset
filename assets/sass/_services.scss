@@ -1,0 +1,19 @@
+.service-details {
+    p {
+        color: #3B3B3B;
+        margin-bottom: 3rem;
+    }
+    h3 {
+        font-size: 3.5rem;
+    }
+    .service-content {
+        width: 70%;
+        .service-img {
+            margin-bottom: 2rem;
+        }
+    }
+    .services {
+        width: 24%;
+        align-self: flex-start;
+    }
+}
